@@ -6,6 +6,8 @@
 $green:   #08a057 !default;
 $blue:    #3d61fd !default;
 
+$primary: #83baad !default;
+
 @import 'bootstrap/bootstrap';
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
@@ -137,7 +139,7 @@ small, .small {
 /* Pages
 ================================================== */
 .hero {
-    background: #fdd93d;
+    background: $primary;
     padding: 5rem 5rem;
 }
 
@@ -614,4 +616,85 @@ span.navigation:before {
 .hover-opacity:hover {
     transition: all.3s;
     opacity:.8;
+}
+
+
+/* Progress bar
+========================================== */
+
+/* Style the header: fixed position (always stay at the top) */
+
+.header-progress-bar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+
+/* The progress container (grey background) */
+
+.progress-container {
+    width: 100%;
+    height: 5px;
+    background: #ccc;
+}
+
+
+/* The progress bar (scroll indicator) */
+
+.progress-bar {
+    height: 5px;
+    background: $primary;
+    transition: 0.2s;
+    width: 0%;
+}
+
+/* Navbar 
+========================================== */
+
+li.uk-active {
+    font-size: 25px;
+}
+
+li a {
+    transition: 0.2s
+}
+
+li.uk-active a {
+    position: relative;
+    color: $primary !important;
+    transition: 0.2s;
+    font-weight: 600;
+}
+
+li>a:before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -28px;
+    width: 3px;
+    border-left: none;
+    height: 20px;
+    transition: 1s;
+    transition-property: right;
+}
+
+li.uk-active>a:before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -28px;
+    width: 3px;
+    border-left: 3px solid $primary;
+    height: 20px;
+    transition: 1s ease-in-out;
+    transition-property: right
+}
+
+
+
+li {
+    font-size: 18px
 }

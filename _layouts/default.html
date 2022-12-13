@@ -7,9 +7,52 @@
 
 <title>{{ page.title }} | {{site.title}}</title>
 <link href="{{ site.baseurl }}/assets/css/theme.css" rel="stylesheet">
+
+<script type="text/javascript">
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function () { myFunction() };
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+
+    // Listener for section overlap
+    window.addEventListener('DOMContentLoaded', () => {
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                const id = entry.target.getAttribute('id');
+                console.log("intersectionRatio: " + entry.intersectionRatio + " id: " + id)
+                if (entry.intersectionRatio > 0) {
+                document.getElementById(`a-${id}`).parentElement.classList.add('uk-active');
+                } else {
+                document.getElementById(`a-${id}`).parentElement.classList.remove('uk-active');
+                }
+            });
+        });
+
+        // Track all sections that have an `id` applied
+        const container = document.getElementsByClassName("main")[0]
+        console.log(container)
+        container.querySelectorAll('div[id]').forEach((section) => {
+            observer.observe(section);
+        });
+
+    });
+</script>
+
 </head>   
     
 <body class="layout-default">
+
+<div class="header-progress-bar">
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+</div>
        
 <main class="container">
     {{ content }}  
