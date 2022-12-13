@@ -1,0 +1,121 @@
+<svg width="2168" height="1384" viewBox="0 0 2168 1384" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<style>
+    #Rigth_disc {
+        animation: rotate 2s linear infinite;
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+
+    #Left_disc {
+        animation: rotate 2s linear infinite;
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotateZ(0deg);
+        }
+        to {
+            transform: rotateZ(360deg);
+        }
+    }
+
+    #Projection_light {
+        animation: flicker 2s linear infinite;
+    }
+
+    @keyframes flicker {
+        0% {
+            opacity: 1;
+        }
+        10% {
+            opacity: 0.6;
+        }
+        20% {
+            opacity: 1;
+        }
+        35% {
+            opacity: 1;
+        }
+        45% {
+            opacity: 0.6;
+        }
+        55% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+<g id="Img">
+<g id="Projection_light">
+<rect id="Rectangle 5" x="1164" width="1004" height="1384" fill="#FBF4F4"/>
+<rect id="Rectangle 6" x="626" y="679.088" width="866.557" height="393" transform="rotate(-51.5897 626 679.088)" fill="#FBF4F4"/>
+<rect id="Rectangle 7" x="952.75" y="480" width="840.556" height="393" transform="rotate(51.7783 952.75 480)" fill="#FBF4F4"/>
+<rect id="Rectangle 8" x="1163.75" y="416" width="359.448" height="393" transform="rotate(51.7783 1163.75 416)" fill="#FBF4F4"/>
+</g>
+<g id="Camera">
+<g id="Camera_body">
+<g id="Camera_legs">
+<g id="Line 6">
+<line x1="356.518" y1="786.336" x2="289.336" y2="973.885" stroke="#A4A4A4" stroke-width="6" stroke-linecap="round"/>
+<line x1="356.518" y1="786.336" x2="289.336" y2="973.885" stroke="#A4A4A4" stroke-width="6" stroke-linecap="round"/>
+</g>
+<g id="Line 7">
+<line x1="407.747" y1="787.405" x2="474.325" y2="975.17" stroke="#A4A4A4" stroke-width="6" stroke-linecap="round"/>
+<line x1="407.747" y1="787.405" x2="474.325" y2="975.17" stroke="#A4A4A4" stroke-width="6" stroke-linecap="round"/>
+</g>
+</g>
+<ellipse id="Ellipse 8" cx="382.29" cy="592.383" rx="113.9" ry="112.458" fill="#1F262A"/>
+<rect id="Rectangle 3" x="542.327" y="652.937" width="83.6229" height="77.8558" fill="#A4A4A4"/>
+<rect id="Rectangle 2" x="222.253" y="589.499" width="328.725" height="207.616" rx="2" fill="#2E383D"/>
+<g id="Front_lens">
+<path id="Polygon 1" d="M614.763 655.889C613.37 655.132 613.37 653.133 614.763 652.375L665.58 624.738C666.913 624.013 668.535 624.978 668.535 626.495V681.77C668.535 683.287 666.913 684.252 665.58 683.527L614.763 655.889Z" fill="#2E383D"/>
+<path id="Polygon 2" d="M614.763 730.862C613.37 730.104 613.37 728.105 614.763 727.348L665.58 699.71C666.913 698.986 668.535 699.95 668.535 701.467V756.742C668.535 758.259 666.913 759.224 665.58 758.499L614.763 730.862Z" fill="#2E383D"/>
+<rect id="Rectangle 4" x="617.3" y="650.054" width="51.3272" height="83.6229" rx="2" fill="#2E383D"/>
+</g>
+<circle id="Ellipse 9" cx="493.307" cy="768.279" r="8.65065" fill="#A4A4A4"/>
+<circle id="Ellipse 11" cx="464.471" cy="768.279" r="8.65065" fill="#A4A4A4"/>
+<circle id="Ellipse 10" cx="525.026" cy="768.279" r="8.65065" fill="#A4A4A4"/>
+<circle id="Ellipse 14" cx="305.876" cy="624.102" r="8.65065" fill="#A4A4A4"/>
+<path id="Ellipse 12" d="M284.191 668.797C284.191 678.32 276.471 686.04 266.948 686.04C257.425 686.04 249.705 678.32 249.705 668.797C249.705 659.274 257.425 651.554 266.948 651.554C276.471 651.554 284.191 659.274 284.191 668.797Z" stroke="#A4A4A4" stroke-width="3"/>
+<path id="Ellipse 13" d="M284.191 622.66C284.191 632.183 276.471 639.903 266.948 639.903C257.425 639.903 249.705 632.183 249.705 622.66C249.705 613.137 257.425 605.417 266.948 605.417C276.471 605.417 284.191 613.137 284.191 622.66Z" stroke="#A4A4A4" stroke-width="3"/>
+<line id="Line 5" x1="251.205" y1="773.93" x2="299.993" y2="773.93" stroke="#A4A4A4" stroke-width="6" stroke-linecap="round"/>
+</g>
+<g id="Ground">
+<line id="Line 8" x1="246.5" y1="976" x2="578" y2="976" stroke="#2E383D" stroke-width="6" stroke-linecap="round"/>
+<line id="Line 9" x1="155" y1="976" x2="224" y2="976" stroke="#2E383D" stroke-width="6" stroke-linecap="round"/>
+<line id="Line 10" x1="591.5" y1="976" x2="614" y2="976" stroke="#2E383D" stroke-width="6" stroke-linecap="round"/>
+</g>
+<g id="Left_disc">
+<g id="Ellipse 1">
+<ellipse cx="277.041" cy="477.041" rx="98.0407" ry="98.0407" fill="#2E383D"/>
+<ellipse cx="277.041" cy="477.041" rx="98.0407" ry="98.0407" fill="#2E383D"/>
+<ellipse cx="277.041" cy="477.041" rx="98.0407" ry="98.0407" fill="#2E383D"/>
+<ellipse cx="277.041" cy="477.041" rx="98.0407" ry="98.0407" fill="#2E383D"/>
+</g>
+<circle id="Ellipse 3" cx="277.041" cy="537.595" r="17.3013" fill="#A4A4A4"/>
+<circle id="Ellipse 6" cx="337.595" cy="477.041" r="17.3013" fill="#A4A4A4"/>
+<circle id="Ellipse 7" cx="277.041" cy="479.924" r="28.8355" fill="#A4A4A4"/>
+<circle id="Ellipse 5" cx="216.486" cy="477.041" r="17.3013" fill="#A4A4A4"/>
+<circle id="Ellipse 4" cx="277.041" cy="419.37" r="17.3013" fill="#A4A4A4"/>
+</g>
+<g id="Rigth_disc">
+<g id="Ellipse 2">
+<ellipse cx="496.19" cy="477.041" rx="98.0407" ry="98.0407" fill="#2E383D"/>
+<ellipse cx="496.19" cy="477.041" rx="98.0407" ry="98.0407" fill="#2E383D"/>
+<ellipse cx="496.19" cy="477.041" rx="98.0407" ry="98.0407" fill="#2E383D"/>
+<ellipse cx="496.19" cy="477.041" rx="98.0407" ry="98.0407" fill="#2E383D"/>
+</g>
+<line id="Line 1" x1="518.485" y1="455.921" x2="546.573" y2="417.26" stroke="#A4A4A4" stroke-width="7" stroke-linecap="round"/>
+<line id="Line 3" x1="515.497" y1="502.218" x2="554.158" y2="530.307" stroke="#A4A4A4" stroke-width="7" stroke-linecap="round"/>
+<line id="Line 4" x1="426.09" y1="435.92" x2="464.751" y2="464.009" stroke="#A4A4A4" stroke-width="7" stroke-linecap="round"/>
+<line id="Line 2" x1="455.046" y1="542.428" x2="483.135" y2="503.767" stroke="#A4A4A4" stroke-width="7" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+</svg>
+

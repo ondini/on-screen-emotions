@@ -6,7 +6,7 @@
 $green:   #08a057 !default;
 $blue:    #3d61fd !default;
 
-$primary: #83baad !default;
+$primary: #fdd93d !default;
 
 @import 'bootstrap/bootstrap';
 
@@ -140,7 +140,10 @@ small, .small {
 ================================================== */
 .hero {
     background: $primary;
-    padding: 5rem 5rem;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    position: relative;
+    z-index: 1;
 }
 
 @media only screen and (max-width: 1024px) {
