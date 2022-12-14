@@ -54,8 +54,12 @@
     </div>
 </div>
        
-<main class="container">
+<main class="content container">
     {{ content }}  
+</main>
+
+<main class="not-supp">
+    {% include not_supported.html %}
 </main>
 
 {% include footer.html %}
