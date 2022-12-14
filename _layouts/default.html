@@ -23,13 +23,20 @@
     window.addEventListener('DOMContentLoaded', () => {
 
         const observer = new IntersectionObserver(entries => {
+
+            // entries.sort((a, b) => {
+            //     return b.intersectionRatio - a.intersectionRatio;
+            // }, 0);
+
+            // const max_id = entries[0].target.getAttribute('id');
+            //console.log("max_id:" + max_id)
             entries.forEach(entry => {
                 const id = entry.target.getAttribute('id');
                 console.log("intersectionRatio: " + entry.intersectionRatio + " id: " + id)
-                if (entry.intersectionRatio > 0) {
-                document.getElementById(`a-${id}`).parentElement.classList.add('uk-active');
+                if (entry.intersectionRatio>0) {
+                document.getElementById(`a-${id}`).parentElement.classList.add('active-section');
                 } else {
-                document.getElementById(`a-${id}`).parentElement.classList.remove('uk-active');
+                document.getElementById(`a-${id}`).parentElement.classList.remove('active-section');
                 }
             });
         });
@@ -46,7 +53,7 @@
 
 </head>   
     
-<body class="layout-default">
+<body>
 
 <div class="header-progress-bar">
     <div class="progress-container">
