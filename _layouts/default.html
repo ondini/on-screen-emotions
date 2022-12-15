@@ -8,78 +8,27 @@
 <title>{{ page.title }} | {{site.title}}</title>
 <link href="{{ site.baseurl }}/assets/css/theme.css" rel="stylesheet">
 
-<script type="text/javascript">
-    // When the user scrolls the page, execute myFunction 
-    window.onscroll = function () { myFunction() };
-
-    function myFunction() {
-      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      var scrolled = (winScroll / height) * 100;
-      document.getElementById("myBar").style.width = scrolled + "%";
-    }
-
-    // Listener for section overlap
-    window.addEventListener('DOMContentLoaded', () => {
-
-
-        // Track all sections that have an `id` applied
-        const container = document.getElementsByClassName("main")[0]
-        console.log(container)
-        const chapters = container.querySelectorAll('h1[id]')
-        
-
-        console.log(chapters);
-        const ids = [];
-        chapters.forEach((entry) => {
-            ids.push(entry.getAttribute('id'))
-        });
-
-        const observer = new IntersectionObserver(entries => {
-
-            entries.sort((a, b) => {  // sort and get highest overlap
-                return b.intersectionRatio - a.intersectionRatio;
-            }, 0);
-            const max_id = entries[0].target.getAttribute('id');
-
-            if (entries[0].intersectionRatio > 0) {
-                console.log(entries, "max_id" + max_id + " ratio " + entries[0].intersectionRatio)
-                ids.forEach(id => {
-                    if (id == max_id) {
-                    document.getElementById(`a-${id}`).parentElement.classList.add('active-section');
-                    } else {
-                    document.getElementById(`a-${id}`).parentElement.classList.remove('active-section');
-                    }
-                });
-            };
-        });
-
-        chapters.forEach((section) => {
-            observer.observe(section);
-        });
-
-    });
-</script>
-
 </head>   
     
 <body>
 
-<div class="header-progress-bar">
-    <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
-    </div>
+<div class="progress-bar-container">
+    <div class="progress-bar" id="progressBar"></div>
 </div>
        
-<main class="content container">
+<main class="content container"> 
     {{ content }}  
 </main>
 
-<main class="not-supp">
-    {% include not_supported.html %}
-</main>
-
 {% include footer.html %}
+
+<!-- placeholder for small devices -->
+<div class="not-supp rounded m-5 p-5">
+    <h2 class="text-center">
+        This data story is intended for bigger screens, so please grab some proper device.
+    </h2>
+</div>
+
 
 <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>   
 <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>   

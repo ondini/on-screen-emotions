@@ -4,4 +4,4 @@
 
 This project is kind of jekyll, but not much.
 
-Everything content-related is to be edited in file \_content.
+Everything content-related is to be edited in file \_includes\main.html.

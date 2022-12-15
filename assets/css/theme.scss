@@ -10,6 +10,8 @@ $black: #000;
 $container-width: 1200px;
 $header-height: 747px;
 
+$progress-bar-height: 5px;
+
 @import 'bootstrap/bootstrap';
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
@@ -30,7 +32,6 @@ body {
     font-family: "Rubik",sans-serif;
     line-height:1.7;
     color: $grey;
-    overflow-x:hidden;
     
 }
 
@@ -46,20 +47,13 @@ h1, h2, h3, h4, h5, h6{
     font-weight:600;
 }
 
-.font-weight-bold {
-    font-weight:600;
-}
-
-
-.story{
-    margin-top: 5;
-}
 
 /* Prevent smaller devices to see the content
 ================================================== */
 
 .not-supp {
-    display: none
+    display: none;
+    background: $hero;
 }
 
 @media (max-width: 1300px) {
@@ -144,40 +138,22 @@ li.active-section {
 }
 
 
-/* Footer
-================================================== */
-
-.footer {
-    margin-top:4rem;
-    padding:30px 0;
-}
-
-.hover-opacity:hover {
-    transition: all.3s;
-    opacity:.8;
-}
-
-
 /* Progress bar
 ========================================== */
 
 
-.header-progress-bar {
+.progress-bar-container {
     position: fixed;
     top: 0;
     z-index: 10;
     width: 100%;
-}
-
-.progress-container {
-    width: 100%;
-    height: 5px;
+    height: $progress-bar-height;
     background: $black;
 }
 
 
 .progress-bar {
-    height: 5px;
+    height: 100%;
     background: $primary;
     transition: 0.2s;
     width: 0%;
