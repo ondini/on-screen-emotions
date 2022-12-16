@@ -26,11 +26,17 @@
         </div>
     </div>
     <div class="row justify-content-around">
-        <div class="column col-sm-6">
+        <div class="column col-sm-3">
             {% include plots/hist_revs.html %}
         </div>
-        <div class="column col-sm-6">
+        <div class="column col-sm-3">
             {% include plots/hist_movs.html %}
+        </div>
+        <div class="column col-sm-3">
+            {% include plots/hist_movs_cmu.html %}
+        </div>
+        <div class="column col-sm-3">
+            {% include plots/hist_revs_cmu.html %}
         </div>
     </div>
 </div>
