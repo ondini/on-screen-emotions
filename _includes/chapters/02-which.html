@@ -1,0 +1,42 @@
+<h1 id="which">Which data have we used?</h1>
+<div div class="report-chapter">
+    <p class="report-paragraph">
+        As said before, we based our analysis on the CMU Movie Summary Corpus, but the amount of data in this corpus is not sufficion for our purposes.
+        Thereofre, we decided to get more data from the internet and scraped another movies from IMDB and TMDB. In the following figure can be seen comparison
+        of the data we used in our analysis.
+    </p>
+    <!-- Here is a place for data size and distribution comparison -->
+    <div class="row justify-content-between">
+        <div class="column col-sm-3">
+            <img class="img-card" src="{{site.baseurl}}/assets/images/flap.svg" alt="Size of the datasets">
+            <p>7k movies with revenue data from CMU corpus</p>
+        </div>
+        <div class="column col-sm-3">
+            <img class="img-card" src="{{site.baseurl}}/assets/images/flap.svg" alt="Size of the datasets">
+            <p>17k movies with revenue data in total</p>
+        </div>
+        <div class="column col-sm-3">
+            <img class="img-card" src="{{site.baseurl}}/assets/images/flap.svg" alt="Size of the datasets">
+            <p>analyed 42k movies with from CMU corpus</p>
+        </div>
+        <div class="column col-sm-3">
+            <img class="img-card" src="{{site.baseurl}}/assets/images/flap.svg" alt="Size of the datasets">
+            <p>scraped and analyzed 400k movies in total</p>
+
+        </div>
+    </div>
+    <div class="row justify-content-around">
+        <div class="column col-sm-6">
+            {% include plots/hist_revs.html %}
+        </div>
+        <div class="column col-sm-6">
+            {% include plots/hist_movs.html %}
+        </div>
+    </div>
+</div>
+<style>
+    .img-card{
+        width:100%;
+        padding: 2rem;
+    }
+</style>

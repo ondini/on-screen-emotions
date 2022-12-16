@@ -2,6 +2,10 @@
 
 ## How on-screen emotions make money?
 
-This project is kind of jekyll, but not much.
+### Analysis of movie sentiment impact on ratings and revenue in years.
 
-Everything content-related is to be edited in file \_includes\main.html.
+This project is kind of jekyll, but not much, more .html & .css.
+
+Everything content-related is to be edited in respective chapters in \_includes\chapters.
+Used plots (.htmls exported from pltoly) are then to be placed in \_includes\plots.
+If some images (.png, .jpg, .svg) are needed to be used, place in \assets\images.
