@@ -1,14 +1,32 @@
 <svg width="2168" height="1384" viewBox="0 0 2168 1384" fill="none" xmlns="http://www.w3.org/2000/svg">
 
 <style>
+    #Img {
+        animation: slideInLeft 2s ease-in-out;
+        animation-delay: 1s;
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+
+    @keyframes slideInLeft {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      
     #Rigth_disc {
         animation: rotate 2s linear infinite;
+        animation-delay: 5s;
         transform-origin: center;
         transform-box: fill-box;
     }
 
     #Left_disc {
         animation: rotate 2s linear infinite;
+        animation-delay: 5s;
         transform-origin: center;
         transform-box: fill-box;
     }
@@ -24,6 +42,7 @@
 
     #Projection_light {
         animation: flicker 2s linear infinite;
+        animation-delay: 5s;
     }
 
     @keyframes flicker {

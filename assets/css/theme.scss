@@ -19,7 +19,7 @@ $progress-bar-height: 5px;
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
 
 
-/* #General css
+/* General css
 ================================================== */
 
 html {
@@ -102,6 +102,30 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+
+
+/* Content
+========================================== */
+.report-paragraph {
+    text-align: justify;
+}
+
+.img-card {
+    img {
+        width: 100%;
+    }
+    p {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 1rem;
+
+    }
+}
+
+.report-chapter{
+    margin-bottom: 2rem;
 }
 
 /* Sidebar == Navbar
