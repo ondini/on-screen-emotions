@@ -8,7 +8,7 @@ $main_graph: #EDAD08;
 $grey: #333;
 $black: #000;
 
-$container-width: 1200px;
+$container-width: 1150px;
 $header-height: 747px;
 
 $progress-bar-height: 5px;
@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6{
     background: $hero;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1180px) {
     .content {
         display: none
     }
