@@ -1,16 +1,19 @@
 <svg width="664" height="748" viewBox="0 0 664 748" fill="none" xmlns="http://www.w3.org/2000/svg">
 <style>
     #Top_flap {
-        animation: flap 2s ease-in-out infinite;
+        animation: flap 6s ease-in-out infinite;
         transform-origin: bottom left;
         transform-box: fill-box;
     }
-    
+
     @keyframes flap {
         0% {
             transform: rotateZ(0deg);
+        } 
+        66% {
+            transform: rotateZ(0deg);
         }
-        41% {
+        86% {
             transform: rotateZ(-20deg);
         }
         100% {

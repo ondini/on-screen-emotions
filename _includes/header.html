@@ -5,15 +5,41 @@
       <div class="col-md-5"> 
       </div>
       <div class="col-md-7 ">
-        <h1 class="mb-4 text-center">How on-screen emotions <br> make money?</h1>
-        <p class="mb-4 text-center">Analysis of movie sentiment impact on ratings and revenue in years.</p>
-        <div class="row justify-content-center"><a href="#what" class="btn btn-dark text-white px-5 btn-lg">Let's start!</a></div>
+        <h1 class="mb-4 text-center flicker_light">How on-screen emotions <br> make money?</h1>
+        <p class="mb-4 text-center flicker_light">Analysis of movie sentiment impact on ratings and revenue in years.</p>
+        <div class="row justify-content-center flicker_light"><a href="#what" class="btn btn-dark text-white px-5 btn-lg">Let's start!</a></div>
       </div>
     </div>
   </div>
 </div>
 
 <style>
+  .hero {
+      transform: translateY(-150%);
+      animation: slideInTop 1s forwards;
+      animation-delay: 1.2s;
+      transform-origin: center;
+      transform-box: fill-box;
+  }
+
+  @keyframes slideInTop {
+        100% {
+          transform: translateX(0%);
+        }
+      }
+
+  .flicker_light {
+      opacity: 0;
+      animation: flicker 0.2s forwards;
+      animation-delay: 6s;
+  }
+
+
+  @keyframes flicker {
+      100% {
+        opacity: 1;
+      }
+  }
 
 </style>
 
