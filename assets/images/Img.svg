@@ -14,8 +14,8 @@
         100% {
           transform: translateX(0%);
         }
-      }
-      
+    }
+
     #Rigth_disc {
         animation: rotate 2s linear infinite;
         animation-delay: 4s;

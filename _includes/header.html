@@ -17,25 +17,41 @@
   .hero {
       transform: translateY(-150%);
       animation: slideInTop 1s forwards;
-      animation-delay: 1.5s;
+      -moz-animation: slideInTop 1s forwards;
+      animation-delay: 1s;
+      -moz-animation-delay: 1s;
       transform-origin: center;
       transform-box: fill-box;
   }
 
   @keyframes slideInTop {
-        100% {
-          transform: translateX(0%);
-        }
-      }
+    100% {
+      transform: translateX(0%);
+    }
+  }
 
-  .flicker_light {
-      opacity: 0;
-      animation: flicker 0.2s forwards;
-      animation-delay: 5.5s;
+  @-moz-keyframes slideInTop {
+    100% {
+      transform: -moz-translateX(0%);
+    }
   }
 
 
+  .flicker_light {
+    opacity: 0;
+    animation: flicker 0.2s forwards;
+    -moz-animation: flicker 0.2s forwards;
+    animation-delay: 5.5s;
+    -moz-animation-delay: 7.5s;
+  }
+
   @keyframes flicker {
+      100% {
+        opacity: 1;
+      }
+  }
+
+  @-moz-keyframes flicker {
       100% {
         opacity: 1;
       }
