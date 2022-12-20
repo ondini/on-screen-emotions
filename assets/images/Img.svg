@@ -5,7 +5,9 @@
 
         transform: translateX(-100%);
         animation: slideInLeft 2s forwards;
+        -moz-animation: slideInLeft 2s forwards;
         animation-delay: 2s;
+        -moz-animation-delay: 0.5s;
         transform-origin: center;
         transform-box: fill-box;
     }
@@ -18,14 +20,18 @@
 
     #Rigth_disc {
         animation: rotate 2s linear infinite;
+        -moz-animation: rotate 2s linear infinite;
         animation-delay: 4s;
+        -moz-animation-delay: 3s;
         transform-origin: center;
         transform-box: fill-box;
     }
 
     #Left_disc {
         animation: rotate 2s linear infinite;
+        -moz-animation: rotate 2s linear infinite;
         animation-delay: 4s;
+        -moz-animation-delay: 3s;
         transform-origin: center;
         transform-box: fill-box;
     }
@@ -42,7 +48,9 @@
     #Projection_light {
         opacity: 0;
         animation: flicker 2s linear infinite;
+        -moz-animation: flicker 2s linear infinite;
         animation-delay: 5s;
+        -moz-animation-delay: 4s;
     }
 
     @keyframes flicker {
