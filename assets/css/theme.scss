@@ -109,6 +109,7 @@ h1, h2, h3, h4, h5, h6{
 /* Content
 ========================================== */
 .report-paragraph {
+    margin-top: 1rem;
     text-align: justify;
 }
 
@@ -127,10 +128,39 @@ h1, h2, h3, h4, h5, h6{
     }
 }
 
+.comparison-img {
+    padding: 3rem;
+    img {
+        width: 70%;
+    }
+    p {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 1rem;
+        max-width: 70%;
+    }
+
+}
+
 .report-chapter{
     margin-bottom: 2rem;
 }
 
+.quote {
+    padding: 3rem;
+    h3 {
+        // font-style: italic;
+        font-weight: 600;
+    }
+    div {
+        p {
+            font-size: 18px;
+            font-style: italic;
+        }
+    }
+
+
+}
 /* Sidebar == Navbar
 ================================================== */
 
