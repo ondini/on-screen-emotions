@@ -2,7 +2,7 @@
 ---
 
 $primary: #ffdd44 !default;
-$hero:    #ffd344 !default;
+$hero:    #ffc609 !default;
 $main_graph: #EDAD08;
 
 $grey: #333;
@@ -116,6 +116,7 @@ h1, h2, h3, h4, h5, h6{
 .img-card {
     img {
         width: 100%;
+        
     }
     object {
         width: 100%;
@@ -129,7 +130,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .comparison-img {
-    padding: 3rem;
+
     img {
         width: 70%;
     }
@@ -171,7 +172,7 @@ h1, h2, h3, h4, h5, h6{
 .sidebar {
     font-size: 18px;
     padding: 30px;
-    background-color: rgb(255, 245, 198);
+    background-color: #ffde70;
 
     ul {
         list-style:none;
