@@ -12,13 +12,34 @@
     <h2 id="emotions">Emotions</h2>  
     <p class="report-paragraph">
         <!--  -->
+        
+    </p>
+    <p class="report-paragraph">
+        With the aim of gaining a deeper understanding of hidden trends, we are using a movie plot emotion analysis technique. 
+        This involves identifying and extracting the emotions or feelings expressed in movie summaries.
+        There are many potential benefits to this approach, including the ability to understand public opinion and get a sense of how people feel about a particular movie or movie franchise. This information can be useful for studios, producers, and marketers who are trying to gauge the potential success of a film.
+        Additionally, this technique allows researchers and analysts to identify and highlight recurring themes or motifs that appear in the movie and are portrayed in popular media. This can provide valuable insights and help to better understand the film's narrative and its representation of certain themes.
+    </p>
+    <p class="report-paragraph">
+        To conduct our movie plot emotion analysis, we have implemented three versions of DistilBERT, a transformer-based machine learning model developed by Hugging Face that is well-suited for natural language processing tasks.
+        In order to determine which classifier is most effective for our analysis, we have tested three different models for emotion classification on a subset of 50 movies from our initial dataset. By comparing the prevalence of different emotions identified by each model, we aim to select the classifier that is most suitable for our analysis and provides valuable insights into the film's narrative and representation of certain themes.
+    </p>
+    <div class="row justify-content-around">
+        {% include plots/classifier_emotions.html %}
+    </div>
+    <p class="report-paragraph">
+        After analyzing the plots, we determined that the results from Classifier 1 (distilbert-base-uncased-emotion) provide the most insight into emotions. In comparison, Classifier 2 includes a "neutral" emotion that is not relevant to our analysis, while Classifier 3 offers a very detailed analysis that is not necessary for our purposes. Therefore, we concluded that Classifier 1 is the best choice for our movie plot emotion analysis.
     </p>
     <div class="row justify-content-around">
         {% include plots/plot_emotions.html %}
     </div>
-    <div class="row justify-content-around">
-        {% include plots/classifier_emotions.html %}
-    </div>
+    <p class="report-paragraph">
+        After extracting the emotions from the movie plots, we plotted the data on a graph to visualize the evolution of the emotions over time. The x-axis of the graph represents the time period, starting from 1913 and ending in 2022, and the y-axis represents the frequency of each emotion in the movie plots. We used different colors to distinguish the different emotions on the graph.
+        As we examined the graph, we discovered several interesting trends in the frequency of different emotions in movie plots over the past century. The frequency of anger appeared to fluctuate over time, remaining the highest, but with a predicted decrease in the future. On the other hand, the frequencies of surprise and love remained relatively constant and low. Additionally, we found that the trends of sadness and fear were similar until the 1920s, after which fear became more dominant. The frequency of joy seemed to be more independent of the other emotions, remaining in the middle with a predicted increase in the coming years.
+    </p>
+    <p class="report-paragraph">
+        Our analysis of classifier 1 provided valuable insights into the evolution of emotions in movie plots over the past century. We now hope to utilize this information to answer the question of how emotions contribute to the success of a movie, as we continue to develop our cookbook.
+    </p>
 
     <h2 id="violence">Violence</h2>  
     <p class="report-paragraph">
