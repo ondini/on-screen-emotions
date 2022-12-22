@@ -1,13 +1,54 @@
 
 <h1 id="evolution">Movie nature evolution over the years!</h1>
 <div class="report-chapter">
+    <p class="report-paragraph">
+        One of the most crucial determinants, that makes movies enngaging, are emotions. They keep our attention by making the content more relevant and appealing. In our opinion it is the factor, that can influence the success of the movie. In the undermentioned sections we will try to answer to the questions: How prevalent in popular movies are emotions (anger, disgust, fear, joy, sadness, surprise, love, neutral), general sentiment (positivity, negativity), violence dose (custom measurement), violence manifestation (most frequent words)?
+    </p>
+    <p class="report-paragraph">
+        In order to make results more objective, we will assume the following: the term popular movies means the ones which got the highest box revenues or are highest rated in user rankings. We are using these movies, beause it is infeasible to use all the films which were ever made.
+    </p>
     <h2 id="general_sentiment">General sentiment</h2>
     <p class="report-paragraph">
-        <!--  -->
+        We will kick off our investigation with determining the general tone of the movie. Therefore we've used python TextBlob library. It's sentiment analyzer is based on predefined dictionary containing most significant words in the context of overall atmosphere. This utility gives us informations such as: polarity (ranging from -1.0 to 1.0, where 1 indicates highest positivity), subjectivity (ranging from 0.0 to 1.0, where 0 means maximal objectivity). Let's take a look at those indicators and try to predict the future trend!
     </p>
     <div class="row justify-content-around">
-        {% include plots/general_sentiment_in_years.html %}
-    </div>  
+        {% include plots/general_sentiment_polarity_in_years.html %}
+    </div>
+    <!-- 
+        print(reg.coef_)
+        print(reg.intercept_)
+        [[-0.00027264]] -> 2.72e-4
+        [0.59579119] -> 0.595
+     -->
+    <p class="report-paragraph">
+        There are several things to notice! First of all we see the positive general sentiment over all the years. By the regression line model's characteristics, we see the decreasing tendency. It's <b>slope coefficient is -2.72e-4 and interception 0.595</b>. When we take into consideration the maximal and minimal possible polarity, we can conclude that this tendency is fractional, but still occurs. Complete neutrality could be achieved around 2200 year.
+    </p>
+    <p class="report-paragraph">
+        Secondly, we see that there is bigger variance in sentiment values between 1920 and 1960, than for the data after 1960. It is probably due to the smaller amount of data from early years. Fewer samples usually leads to the higher deviation. We can spot one outlier for 1913. In that year there was data about only one movie.
+    </p>
+    <p class="report-paragraph">
+        Lastly we can spot slight sinusoidal motion of the data. There are two peaks around 1930 and 2000. The through occured around 1965.
+    </p>
+    <p class="report-paragraph">
+
+    </p>
+
+    <div class="row justify-content-around">
+        {% include plots/general_sentiment_subjectivity_in_years.html %}
+    </div>
+    <!-- 
+        print(reg.coef_)
+        print(reg.intercept_)
+        [[-0.00012701]] -> 1.27e-4
+        [0.69660253] -> 0.696
+     -->
+    <p class="report-paragraph">
+
+    </p> 
+
+    <p class="report-paragraph">
+        Summary
+    </p>
 
     <h2 id="emotions">Emotions</h2>  
     <p class="report-paragraph">
@@ -46,12 +87,14 @@
         <!--  -->
     </p>
     <div class="row justify-content-around">
-        {% include plots/violence_score_in_years_no_reg.html %}
+        {% include plots/violence_score_in_years_reg_norm.html %}
     </div>
-
-    <div class="row justify-content-around">
-        {% include plots/violence_score_in_years_from_1970_reg.html %}
-    </div>
+    <!-- 
+        print(reg.coef_)
+        print(reg.intercept_)
+        [[1.54701958e-05]]
+        [-0.0242303]
+    -->
 
     <div class="row justify-content-around">
         {% include tables/top_manifests_in_years.html %}
