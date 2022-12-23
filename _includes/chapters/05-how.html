@@ -6,10 +6,19 @@
     <p class="report-paragraph">
         From the table above, we can see correlations with the help of which we can answer a really important question burning throughout this whole data story - do the sentiments really matter?
         In the first row, we can see the correlation between revenue and all of the sentiment-related features plus rating. Before diving deeper, note that the correlation results are similar to both revenues with inflation taken into account and without. Therefore, we will be considering them together from now on.
+    </p><p class="report-paragraph">
         We can start with an example of a strong and very expected fact - rating and revenue have high positive revenue. The plot of this relation can be seen below on the left. However, this is not very useful for a future director, as it indicates something like: "In order to make a gainful movie, simply make a good movie!" However, the observation is that people are willing to pay for a good movie.
         Now we can dive deeper into the correlations. Another very strong correlation is revenue and violence score, and surprisingly, this correlation is negative - the more violent movie you make, the higher probability of low revenues it brings! This relation's plot can be seen below on the right.
+    </p><p class="report-paragraph">
         Another significant indicator comes in the case of fear, which is pretty straightforward - increasing the fearsomeness of your movie can generally bring you higher revenues but also secure you lower ratings! 
-        The last feature, which is worth pointing out, is sadness. Clearly, the presence of overall sadness influences higher ratings. So, we see that sentiments matter to some extent, but just adding more fights to the movie doesn't guarantee you a blockbuster!
+	</p><p class="report-paragraph"></p>
+        What we also need to point out is a quite strong negative correlation of polarity, which points towards general movie positivity or negativity. This indicator clearly says that with decreasing positivity, what is also increasing negativity, revenues grow!
+        
+    </p><p class="report-paragraph"></p>
+        The last (but definitely not least) feature, which is worth pointing out, is sadness. Clearly, the presence of overall sadness influences higher ratings but can have a slightly negative effect on income!
+    </p><p class="report-paragraph"></p>
+        There are also other interesting correlations (such as negative revenue in case of joy or positive for anger), but these are not so strong.
+So, we see that sentiments matter to some extent, but just adding more fights to the movie doesn't guarantee you a blockbuster!
     </p>
     <div class="row justify-content-around">
         {% include plots/rev_rat_corr.html %}
