@@ -8,8 +8,8 @@
     }
 
     #Avatar {
-        animation: rotate 7s linear infinite;
-        -moz-animation: rotate 7s linear infinite;
+        animation: rotate 8s linear infinite;
+        -moz-animation: rotate 8s linear infinite;
         transform-origin: center;
         transform-box: fill-box;
     }
@@ -21,7 +21,9 @@
     to {
         transform: rotateZ(360deg);
     }
+
 </style>
+
 <g id="Comparison">
 <g id="Denmark_GDP_2018">
 <circle id="bcg" cx="770" cy="770" r="770" fill="#ffc609"/>
