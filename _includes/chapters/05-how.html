@@ -1,9 +1,18 @@
 <h1 id="how">So how to get money and fame?</h1> 
 <div class="report-chapter">
-    {% include plots/correlations_light.html %}
-    <p class="">
-        From the table above, we can see correlations with the help of which we can answer an really interesting question – do the sentiments really matter?
-
-In the first row, we can see the correlation between revenue and rating and we can detect that revenue and rating have a small positive but very significant (p<<0.05) correlation. This makes perfect sense that people want to watch preferably better than worse movies. If revenue and rating are correlated, what about they correlating with sentiments? We can eliminate correlations between revenue & surprise and rating correlating with anger, joy and surprise. We do so on the basis that the p-value is over 0.05 which makes them not correlated. Based on this table, by increasing anger and fear, we could make more money as revenue is correlating positively with anger and fear. However, by increasing fear, based on the table, our rating would be lower. Also by increasing the amount of joy, our revenue would decrease. Thus, this makes a puzzle which is not so clear! Each of the genres have their own main sentiments and because people choose what do they like, we can't then determine for example that by increasing anger and fear, it is an easy path to success in every genre. So, sentiments matter, but by just by adding more fights to the movie doesn't guarantee you a blockbuster!
+    <div class="row justify-content-around">
+    {% include plots/pearson.html %}
+    </div>
+    <p class="report-paragraph">
+        From the table above, we can see correlations with the help of which we can answer a really important question burning throughout this whole data story - do the sentiments really matter?
+        In the first row, we can see the correlation between revenue and all of the sentiment-related features plus rating. Before diving deeper, note that the correlation results are similar to both revenues with inflation taken into account and without. Therefore, we will be considering them together from now on.
+        We can start with an example of a strong and very expected fact - rating and revenue have high positive revenue. The plot of this relation can be seen below on the left. However, this is not very useful for a future director, as it indicates something like: "In order to make a gainful movie, simply make a good movie!" However, the observation is that people are willing to pay for a good movie.
+        Now we can dive deeper into the correlations. Another very strong correlation is revenue and violence score, and surprisingly, this correlation is negative - the more violent movie you make, the higher probability of low revenues it brings! This relation's plot can be seen below on the right.
+        Another significant indicator comes in the case of fear, which is pretty straightforward - increasing the fearsomeness of your movie can generally bring you higher revenues but also secure you lower ratings! 
+        The last feature, which is worth pointing out, is sadness. Clearly, the presence of overall sadness influences higher ratings. So, we see that sentiments matter to some extent, but just adding more fights to the movie doesn't guarantee you a blockbuster!
     </p>
+    <div class="row justify-content-around">
+        {% include plots/rev_rat_corr.html %}
+        {% include plots/rev_vio_corr.html %}
+    </div>
 </div>
