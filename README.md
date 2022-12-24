@@ -9,3 +9,5 @@ This project is kind of jekyll, but not much, more .html & .css.
 Everything content-related is to be edited in respective chapters in \_includes\chapters.
 Used plots (.htmls exported from pltoly) are then to be placed in \_includes\plots.
 If some images (.png, .jpg, .svg) are needed to be used, place in \assets\images.
+
+Reference to analysis [notebook](https://github.com/epfl-ada/ada-2022-project-lego).
